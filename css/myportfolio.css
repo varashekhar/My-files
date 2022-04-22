@@ -2,6 +2,10 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .navbar-brand{
     margin-left: 40px;
     margin-right: 5rem !important;
