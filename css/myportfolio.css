@@ -61,16 +61,26 @@ marquee{
       background-color: black;
       padding-top: 25;
 }
+.resume{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
 .location ,.follow, .contact{
     padding-top: 30px;
+}
+.item-div{
+    width: 100px;
+    margin: 0 auto;
 }
 .items{
     list-style: none;
     display: flex;
-    margin-left: 120;
+    flex-direction: row;
 }
 .item1{
-    margin: 0 20;
+    margin:0 30 0 -23;
 }
 .item-link{
     text-decoration: none;
