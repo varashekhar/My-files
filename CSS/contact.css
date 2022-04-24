@@ -6,3 +6,12 @@
         margin: 0 auto 40 auto;
     }
   }
+.image7{
+    max-width: 100%;
+    margin: 70 auto;
+}
+@media only screen and (max-width: 992px) {
+    .image7 {
+        margin: 40 auto;
+    }
+  }

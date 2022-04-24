@@ -10,8 +10,213 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="CSS/skills.css">
     <link rel="stylesheet" href="css/contact.css">
+    <style>
+        /*home*/
+            *{
+                box-sizing: border-box;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            html, body {
+                max-width: 100%;  
+                overflow-x: clip;
+            }
+            .bottom_home{
+                visibility: hide;
+                opacity: 1;
+                position: fixed;
+                    bottom: 50;
+                    right: 5;
+            }
+            @media only screen and (max-width: 992px) {
+                .bottom_home {
+                    position: fixed;
+                    bottom: 140;
+                    right: 5;
+                    visibility: visible;
+                    opacity: .5;
+                    z-index: 1000;
+                }
+            }
+            .navbar-brand{
+                margin-left: 40px;
+                margin-right: 5rem !important;
+            }
+            @media only screen and (max-width: 992px) {
+                .navbar-brand {
+                    margin-left: 10px;
+                    margin-right: 1rem;
+                }
+            }
+            .nav-item{
+                margin: 0 10 0 10;
+                font-size: larger;
+            }
+            .nav-item-last{
+                margin-right: 50px;
+            }
+            .navbar-nav{
+                flex-direction: row-reverse !important;
+            }
+            @media only screen and (max-width: 992px) {
+                .navbar-nav {
+                flex-direction: column-reverse !important;
+                }
+            }
+            .mail:hover{
+                color: #b60705;
+            }
+            .linked_in:hover{
+                color:#0e76a8;
+            }
+            .twitt_er:hover{
+                color:#00acee;
+            }
+            .gi_t:hover{
+                color: #90311f;
+            }
+            .image2{
+                margin: 100 auto 20 auto;
+            }
+            @media only screen and (max-width: 992px) {
+                .image2 {
+                    margin: 30 auto 20 auto;
+                }
+            }
+            .image3{
+                margin: 100 auto;
+                text-align: center;
+            }
+            @media only screen and (max-width: 992px) {
+                .image3 {
+                    margin: 30 auto 20 auto;
+                }
+            }
+            .image4{
+                margin: 0 100;
+            }
+            @media only screen and (max-width: 992px) {
+                .row2 {
+                    flex-direction: column-reverse ;
+                }
+            }
+
+            marquee{
+                height: 70;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxF-9FqKwLWncJa7eBwg85SIBkQnqyDVm8Q&usqp=CAU);
+                background-repeat: repeat;
+                opacity: .7;   
+                background-color: black;
+                padding-top: 25;
+            }
+            .resume{
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+                font-size: x-large;
+            }
+            .location ,.follow, .contact{
+                padding-top: 30px;
+            }
+            .item-div{
+                width: 100px;
+                margin: 0 auto;
+            }
+            .items{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+            }
+            .item1{
+                margin:0 30 0 -23;
+            }
+            .item-link{
+                text-decoration: none;
+            }
+            .policy , .mail-to , .call-to{
+                text-decoration: none;
+                color: white;
+            }
+
+            /*about*/
+            .abt{
+                line-height: 2;
+            }
+            .image1{
+                max-width: 70%;
+                margin: 50 auto 66 auto ;
+            }
+            @media only screen and (max-width: 992px) {
+                .image1 {
+                    margin: 0 auto 0 auto;
+                }
+            }
+            .image5{
+                margin-top: 250;
+                margin-left: -100;
+            }
+            @media only screen and (max-width: 992px) {
+                .image5 {
+                    margin: 10 auto 20 auto;
+                }
+            }
+            /*skills*/
+            .card{
+                border: none;
+                margin: 10 auto !important;
+            }
+            @media only screen and (max-width: 576px) {
+                .card {
+                    margin: 0 auto;
+                    width: fit-content;
+                    height: fit-content;
+                }
+            }
+            .card:hover{
+                border: 1px solid black;
+            }
+            .card1{
+                margin: 20 auto 0 auto;
+                max-height: 135;
+            }
+            .card2{
+                margin: 20 auto 0 auto;
+                max-height: 135;
+                max-width: 120;
+            }
+            .card_skills1{
+                margin: 50 0 15 0;
+            }
+
+            /*contact*/
+            .contact1{
+                height: 80;
+            }
+            @media only screen and (max-width: 992px) {
+                .contact1 {
+                    height: 15;
+                }
+            }
+            .image6{
+                margin-top: 200;
+            }
+            @media only screen and (max-width: 992px) {
+                .image6 {
+                    margin: 0 auto 40 auto;
+                }
+            }
+            .image7{
+                max-width: 100%;
+                margin: 70 auto;
+            }
+            @media only screen and (max-width: 992px) {
+                .image7 {
+                    margin: 40 auto;
+                }
+            }
+    </style>
 </head>
-<body>
+<body readonly="readonly">
+    <!--navbar-->
     <div class="sticky-lg-top ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark texr-dark">
             <div class="container-fluid ">
@@ -39,23 +244,23 @@
                  <div class="w-50">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item nav-item-last">
-                            <a class="nav-link"  href="https://twitter.com/KVarashekhar" target="_blank">
-                                <i class="fa fa-twitter" style="font-size:30px"></i>
+                            <a class="nav-link" href="/VarashekharKSTLResume.pdf" target="_blank">
+                                <i class="fa fa-file-pdf-o mail" style="font-size:26px"></i>                      
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="mailto:varashekhar113.vs@gmail.com" target="_blank">
-                                <i class="fa fa-envelope-o" style="font-size:30px"></i>                      
+                            <a class="nav-link"  href="https://twitter.com/KVarashekhar" target="_blank">
+                                <i class="fa fa-twitter twitt_er" style="font-size:30px"></i>
                             </a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="https://github.com/varashekhar" target="_blank">
-                                <i class="fa fa-github" style="font-size:30px"></i>                      
+                                <i class="fa fa-github gi_t" style="font-size:30px"></i>                      
                             </a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="https://www.linkedin.com/in/varashekharkommana" target="_blank">
-                                <i class="fa fa-linkedin" style="font-size:30px"></i>
+                                <i class="fa fa-linkedin linked_in" style="font-size:30px"></i>
                             </a>
                         </li>
                     </ul>
@@ -64,29 +269,32 @@
             </div>
         </nav>
     </div>
-    <div id="home">    
-        <div class="row">
-            <div class="col-lg-5 col-md-12"> 
-                <img src="Images/content111.png" alt="alt" class="mx-auto d-block">
+    <!--home-->
+    <div id="home" style="max-height: fit-content ;margin: 10 auto;">    
+        <div class="row" style="max-height: fit-content ;margin: 10 auto;">
+            <div class="col-lg-5 col-md-12" > 
+                <img src="https://media3.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="alt" class="mx-auto d-block" style="max-width:50% ; max-height: auto; margin: 0 auto;">
             </div>
             <div class="col-lg-7 col-md-12 "> 
-                <div class="container  text-center image2">
-                    <h4>Develop what you need</h4>
-                    <p>Im a developer, so i know how to create your
-                         website to run across devices using the latest technologies available</p>
+                <div class="container  text-center image2">         
+                    <h4>Design what you want</h4>
+                    <p>I like to keep it simple.My goals are to focus on typography,content and conveying the message you want to send</p>   
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row row2">
+    <div class="container-fluid" style="max-height: fit-content ;margin: 10 auto;">
+        <div class="row row2" style="max-height: fit-content ;margin: 10 auto;">
             <div class="col-lg-7 col-md-12 "> 
                 <div class="container image3">
-                    <h4>Design what you want</h4>
-                    <p>I like to keep it simple.My goals are to focus on typography,content and conveying the message you want to send</p>
-                </div></div>
-            <div class="col-lg-5 col-md-12"> 
-                <img src="Images/content222.png" alt="alt" class="mx-auto d-block">
+                    <h4>Develop what you need</h4>
+                    <p>Im a developer, so i know how to create your
+                         website to run across devices using the latest technologies available
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <img src="https://png.pngtree.com/png-vector/20200429/ourmid/pngtree-web-development-concept-flat-design-png-image_2197063.jpg" alt="alt" class="mx-auto d-block" style="max-width:57% ; max-height: 80% ; margin: 0 auto;">
             </div>               
         </div>
     </div>
@@ -99,10 +307,11 @@
             </h4>
         </marquee>
     </div>
+    <!--about-->
     <div id="about">    
         <div class="row">
-            <div class="col-lg-7 col-md-12"> 
-                <img src="Images/abt.jpg" height="480px" width="auto"  alt="alt" class="mx-auto d-block image1">
+            <div class="col-lg-7 col-md-12">  
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCgqE_hUBnFrHvPhkEG3EtBFHtsk3VNskRA&usqp=CAU" height="480px" width="auto"  alt="alt" class="mx-auto d-block image1">
             </div>
             <div class="col-lg-5 col-md-12 "> 
                 <div class="container  text-center image5 ">
@@ -127,65 +336,72 @@
             </h4>
         </marquee>
     </div>
-    <div style="height: 5px;" id="skills">
+    <!--skills-->
+    <div style="height: 60px;" id="skills">
+
+    </div>
+    <div class="text-center tools" style="height: 25px; font-size: larger; margin-top: 10;" >
+        <b>
+            Skills & Tools
+        </b>
     </div>
     <div >
         <div class="container">
             <div class="row card_skills1" >
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/html5.png" class="card-img-top card1 " alt="HTML-5">
+                        <img src="https://us.123rf.com/450wm/innayatsuk/innayatsuk2102/innayatsuk210200051/165304530-orange-3d-html5-icon-isolated-on-white-background-.jpg?ver=6" class="card-img-top card1 " alt="HTML 5">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 "> 
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"> 
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/css3.png" class="card-img-top card2 " alt="HTML-5">
+                        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-official.svg" class="card-img-top card2 " alt="CSS 3">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6"> 
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"> 
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/js.png" class="card-img-top card1 " alt="HTML-5">
+                        <img src="https://thumbs.dreamstime.com/b/javascript-logo-javascript-logo-white-background-vector-format-available-136765881.jpg" class="card-img-top card1 " alt="Javascript">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6"> 
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"> 
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/html5.png" class="card-img-top card1 " alt="HTML-5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9fauzqwFTsI6HC4rJgJhio5-yi2bjicZb0jyxrxwjSibTEWBjCrHRO1sVtzrJhtUmGw&usqp=CAU" class="card-img-top card1 " alt="Bootstrap5">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row card_skills2">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/html5.png" class="card-img-top card1 " alt="HTML-5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOCL6VrsyjSXokMIPzDtXOEO-zDAQol8Xqvw&usqp=CAU" class="card-img-top card1 " alt="Jquery">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6"> 
+                    <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/1024px-AJAX_logo_by_gengns.svg.png" class="card-img-top card1 " alt="Ajax">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 "> 
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/html5.png" class="card-img-top card1 " alt="HTML-5">
+                        <img src="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png" class="card-img-top card1 " alt="Git and Github">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6"> 
                     <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/html5.png" class="card-img-top card1 " alt="HTML-5">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6"> 
-                    <div class="card" style="width: 10rem; height: auto; margin: 20 auto;">
-                        <img src="Images/html5.png" class="card-img-top card1 " alt="HTML-5">
+                        <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.png" class="card-img-top card1 " alt="VS code">
                         <div class="card-body">
                         </div>
                     </div>
@@ -199,7 +415,7 @@
     <div class=" text-center">
         <span>
             <i class="fa fa-hand-o-right text-success" style="font-size:30px"></i>
-            <a class="resume text-primary" href="./VarashekharKSTLResume.pdf" target="_blank" download="Resume.">
+            <a class="resume download" style="color: #b7d48f;" href="./VarashekharKSTLResume.pdf" target="_blank" download="Resume.">
                 Resume
                 <i class="fa fa-arrow-circle-down text-black" style="font-size:24px"></i>
             </a>            
@@ -208,6 +424,7 @@
     <div class="container-fluid">
         <hr>
     </div>
+    <!--contact-->
     <div id="contact">    
         <div class="row">
             <div class="col-lg-7 col-md-12">
@@ -247,9 +464,8 @@
             <div class="col-lg-4 col-md-4 col-sm-12 text-center bg-dark text-light Location">
                 <h5 custom_aboutme>Location</h5>
                 <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt text-primary" viewBox="0 0 16 16">
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: #e44a4d;" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                     </svg>
                     Uppal, Hyderabad 
                     <br>
@@ -282,8 +498,9 @@
                 </h5>
                 <p>
                     <a class="mail-to" href="mailto:varashekhar113.vs@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope text-primary" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="color: #cd2d33;" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
                         </svg>
                         varashekhar113.vs@gmail.com
                     </a>  
@@ -298,10 +515,13 @@
             </div>
         </div>
     </div>
-    <div class="bottom_home">
-        <a class="nav-link" aria-current="page" href="#">
+    <div class="bg-dark">
+        <a class="nav-link bottom_home" aria-current="page" href="#">
             <i class="fa fa-chevron-circle-up" style="font-size:48px;color:rgb(126, 122, 122)"></i>
-        </a>    
+        </a>
+        <h6 class="text-center text-light bg-dark " style="padding-bottom: 10px; font-size: smaller; ">
+                Made in B-5 © 2021-2023 Varashekhar_Kommana
+        </h6>    
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
