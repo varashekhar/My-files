@@ -213,6 +213,17 @@
                     margin: 40 auto;
                 }
             }
+            .navcol{
+                border: none;
+            }
+            @media only screen and (max-width: 992px) {
+                .navcol{
+                    background-image: url(images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
     </style>
 </head>
 <body readonly="readonly">
@@ -221,10 +232,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark texr-dark">
             <div class="container-fluid ">
               <a class="navbar-brand" href="#">Varashekhar_Kommana</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" style="position: relative; z-index: 1000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <div class="collapse navbar-collapse navcol" id="navbarSupportedContent">
                  <div class="w-50 ">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
