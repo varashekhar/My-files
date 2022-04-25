@@ -49,6 +49,17 @@
                     margin-right: 1rem;
                 }
             }
+            #myDIV{
+                border: none;
+            }
+            @media only screen and (max-width: 992px) {
+                #mydiv{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                }
+            }
+             /*
             .navcol{
                 border: none;
             }
@@ -60,6 +71,7 @@
                     background-position: 50% 50%;
                 }
             }
+            */
             .nav-item{
                 margin: 0 10 0 10;
                 font-size: larger;
@@ -240,10 +252,16 @@
 <body readonly="readonly">
     <!--navbar-->
     <div class="sticky-lg-top ">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark texr-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark texr-dark" id="myDIV">
             <div class="container-fluid ">
-              <a class="navbar-brand" href="#">Varashekhar_Kommana</a>
-              <button class="navbar-toggler" style="position: relative; z-index: 1000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#" style="color: #f3efed; font-family: 'Lucida Sans'">
+                  Varashekhar_Kommana
+                  <br>
+                  <span style="font-size: small; position: relative; left :80 ; color: #f3efed; font-family: 'Lucida Sans' ">
+                    UI developer
+                  <span> 
+              </a>
+              <button class="navbar-toggler"onclick="myFunction()" style="position: relative; z-index: 1000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse navcol" id="navbarSupportedContent">
@@ -292,8 +310,8 @@
         </nav>
     </div>
     <!--home-->
-    <div id="home" style="max-height: fit-content ;margin: 10 auto;">    
-        <div class="row" style="max-height: fit-content ;margin: 10 auto;">
+    <div id="home" style="max-height: fit-content ;margin: 6 auto;">    
+        <div class="row" style="max-height: fit-content ;margin: 6 auto;">
             <div class="col-lg-5 col-md-12" > 
                 <img src="https://media3.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="alt" class="mx-auto d-block" style="max-width:50% ; max-height: auto; margin: 0 auto;">
             </div>
@@ -305,8 +323,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="max-height: fit-content ;margin: 10 auto;">
-        <div class="row row2" style="max-height: fit-content ;margin: 10 auto;">
+    <div class="container-fluid" style="max-height: fit-content ;margin: 5 auto;">
+        <div class="row row2" style="max-height: fit-content ;margin: 5 auto;">
             <div class="col-lg-7 col-md-12 "> 
                 <div class="container image3">
                     <h4>Develop what you need</h4>
@@ -545,6 +563,14 @@
                 Made in B-5 © 2021-2023 Varashekhar_Kommana
         </h6>    
     </div>
+    <!--  script -->
+    <!--  toggle background -->
+    <script>
+        function myFunction() {
+           document.getElementById("myDIV").style.backgroundImage = "url(images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg)";
+        }
+    </script>
+    <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
