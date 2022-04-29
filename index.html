@@ -21,6 +21,7 @@
             html, body {
                 max-width: 100%;  
                 overflow-x: clip;
+                user-select: none;
             }
             .bottom_home{
                 visibility: hide;
@@ -47,6 +48,19 @@
                 .navbar-brand {
                     margin-left: 10px;
                     margin-right: 1rem;
+                }
+            }
+            @media only screen and (max-width: 420px) {
+                .navbar-brand {
+                    position: relative ;
+                    left: 95 ; 
+                }
+            }
+            @media only screen and (max-width: 420px) {
+                .navbar-toggler {
+                    position: absolute;
+                    left: 20; 
+                    top: 25;
                 }
             }
             .myDIV.active {
@@ -130,7 +144,6 @@
                     flex-direction: column-reverse ;
                 }
             }
-
             marquee{
                 height: 70;
                 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxF-9FqKwLWncJa7eBwg85SIBkQnqyDVm8Q&usqp=CAU);
@@ -194,6 +207,7 @@
             .card{
                 border: none;
                 margin: 10 auto !important;
+                transition: transform .2s;
             }
             @media only screen and (max-width: 576px) {
                 .card {
@@ -203,7 +217,7 @@
                 }
             }
             .card:hover{
-                border: 1px solid black;
+                transform: scale(1.3);
             }
             .card1{
                 margin: 20 auto 0 auto;
@@ -263,11 +277,10 @@
               <a class="navbar-brand" href="#" style="color: #f3efed; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
                   Varashekhar_Kommana
                   <br>
-                  <span style="font-size: small; position: relative; left :80 ; color: #f3efed; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ">
-                    UI Developer
+                  <span class="ui" style="font-size: small; margin-left: 70 ; color: #f3efed; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ">
                   <span> 
               </a>
-              <button class="navbar-toggler" onclick="myFunction()" style="position: relative; z-index: 1000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" onclick="myFunction()" style=" z-index: 1000;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse navcol" id="navbarSupportedContent">
@@ -334,7 +347,7 @@
             <div class="col-lg-7 col-md-12 "> 
                 <div class="container image3">
                     <h4>Develop what you need</h4>
-                    <p>Im a developer, so i know how to create your
+                    <p>I'm a developer, so i know how to create your
                          website to run across devices using the latest technologies available
                     </p>
                 </div>
@@ -587,6 +600,16 @@
         }
     </script>
     -->
+    <!-- logo type effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed (".ui" , {
+            strings : ["UI Developer" , "UI Developer" ,"UI Developer"] ,
+            typeSpeed : 100 ,
+            backSpeed : 0 ,
+            loop : true 
+        })
+    </script>
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
