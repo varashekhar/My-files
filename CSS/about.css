@@ -2,19 +2,20 @@
     line-height: 2;
 }
 .image1{
-    max-width: 100%;
+    max-width: 70%;
     margin: 50 auto 66 auto ;
 }
 @media only screen and (max-width: 992px) {
     .image1 {
         margin: 0 auto 0 auto;
     }
-  }
+}
 .image5{
-    margin-top: 200;
+    margin-top: 250;
+    margin-left: -100;
 }
 @media only screen and (max-width: 992px) {
     .image5 {
         margin: 10 auto 20 auto;
     }
-  }
+}

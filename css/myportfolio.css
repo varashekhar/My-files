@@ -4,20 +4,26 @@
 }
 html, body {
     max-width: 100%;  
-    overflow-x: clip; 
+    overflow-x: clip;
+    user-select: none;
 }
 .bottom_home{
-    visibility: hidden;
+    visibility: hide;
+    opacity: 1;
+    position: fixed;
+        bottom: 50;
+        right: 5;
 }
 @media only screen and (max-width: 992px) {
     .bottom_home {
         position: fixed;
-        bottom: 25;
-        right: 10;
+        bottom: 140;
+        right: 5;
         visibility: visible;
         opacity: .5;
+        z-index: 1000;
     }
-  }
+}
 .navbar-brand{
     margin-left: 40px;
     margin-right: 5rem !important;
@@ -27,7 +33,49 @@ html, body {
         margin-left: 10px;
         margin-right: 1rem;
     }
-  }
+}
+@media only screen and (max-width: 500px) {
+    .navbar-brand {
+        position: relative ;
+        left: 90 ; 
+    }
+}
+@media only screen and (max-width: 500px) {
+    .navbar-toggler {
+        position: absolute;
+        left: 20; 
+        top: 20;
+    }
+}
+.myDIV.active {
+    background-image: url(images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+/*
+#myDIV{
+    border: none;
+}
+@media only screen and (max-width: 992px) {
+    #mydiv{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+}      
+.navcol{
+    border: none;
+}
+@media only screen and (max-width: 992px) {
+    .navcol{
+        background-image: url(images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+}
+*/
 .nav-item{
     margin: 0 10 0 10;
     font-size: larger;
@@ -40,9 +88,21 @@ html, body {
 }
 @media only screen and (max-width: 992px) {
     .navbar-nav {
-      flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
     }
-  }
+}
+.mail:hover{
+    color: #b60705;
+}
+.linked_in:hover{
+    color:#0e76a8;
+}
+.twitt_er:hover{
+    color:#00acee;
+}
+.gi_t:hover{
+    color: #90311f;
+}
 .image2{
     margin: 100 auto 20 auto;
 }
@@ -50,7 +110,7 @@ html, body {
     .image2 {
         margin: 30 auto 20 auto;
     }
-  }
+}
 .image3{
     margin: 100 auto;
     text-align: center;
@@ -59,7 +119,7 @@ html, body {
     .image3 {
         margin: 30 auto 20 auto;
     }
-  }
+}
 .image4{
     margin: 0 100;
 }
@@ -67,15 +127,15 @@ html, body {
     .row2 {
         flex-direction: column-reverse ;
     }
-  }
-
+}
 marquee{
-      height: 70;
-      background-image: url(../images/bg3.jpg);
-      background-repeat: no-repeat;
-      opacity: .7;   
-      background-color: black;
-      padding-top: 25;
+    /*https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFxF-9FqKwLWncJa7eBwg85SIBkQnqyDVm8Q&usqp=CAU*/
+    height: 70;
+    background-image: url(Images/MARQUEE.jpg);
+    background-repeat: repeat;
+    opacity: .7;   
+    background-color: black;
+    padding-top: 25;
 }
 .resume{
     text-decoration: none;
@@ -105,4 +165,3 @@ marquee{
     text-decoration: none;
     color: white;
 }
-

@@ -1,3 +1,11 @@
+.contact1{
+    height: 80;
+}
+@media only screen and (max-width: 992px) {
+    .contact1 {
+        height: 15;
+    }
+}
 .image6{
     margin-top: 200;
 }
@@ -5,7 +13,7 @@
     .image6 {
         margin: 0 auto 40 auto;
     }
-  }
+}
 .image7{
     max-width: 100%;
     margin: 70 auto;
@@ -14,4 +22,25 @@
     .image7 {
         margin: 40 auto;
     }
-  }
+}
+.mail-to1{
+    text-decoration: none;
+}
+.mail-to1:hover {
+    color: #646464 !important;
+}
+.mail-to:hover {
+    color: #dad8d6!important;
+}
+.call-to1{
+    text-decoration: none;
+}
+.call-to1:hover{
+    color: #646464!important;
+}
+.call-to:hover{
+    color: #dad8d6 !important;
+}
+.policy:hover{
+    color: #dad8d6!important;
+}
